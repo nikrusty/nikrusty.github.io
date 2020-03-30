@@ -1,0 +1,114 @@
+/*CSS to modify body of each HTML page */
+body {
+    background-color: coral;
+    font-family: 'Noto Serif', serif;
+    padding: 15px;
+    margin: 5px;
+    color: darkslateblue;
+    font-size: 20px;
+}
+
+body.about {
+    background-color: beige;
+    font-family: 'Noto Serif', serif;
+    padding: 15px;
+    margin: 5px;
+    color: darkgreen;
+    font-size: 20px;
+}
+
+body.services {
+    background-color: chocolate;
+    font-family: 'Noto Serif', serif;
+    padding: 15px;
+    margin: 5px;
+    color: black;
+    font-size: 20px;
+}
+
+body.contact {
+    background-color: aquamarine;
+    font-family: 'Noto Serif', serif;
+    padding: 15px;
+    margin: 5px;
+    color: darkgreen;
+    font-size: 20px;
+}
+
+body.gallery {
+    background-color: blueviolet;
+    font-family: 'Noto Serif', serif;
+    padding: 15px;
+    margin: 5px;
+    color: lawngreen;
+    font-size: 20px;
+}
+
+/*CSS to control general elements used in every page
+that doesn't require specificity'*/
+h1 {
+    font-size: 45px;
+    font-family: 'Lato', sans-serif;
+    padding: 15px;
+    margin: 5px;
+    color: darkslateblue;
+}
+
+header {
+    text-align: center;
+    position: static;
+    font-family: 'Lato', sans-serif;
+    padding: 10px;
+    margin: 5px;
+    color: darkslateblue;
+}
+
+img {
+    display: block;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    opacity: 0.2;
+}
+
+li {
+    float: left;
+}
+
+a {
+    display: block;
+    padding: 8px;
+}
+
+ul {
+    display: table;
+    list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    position: static;
+}
+
+footer {
+    position: static;
+}
+
+.email {
+    padding: 0px;
+}
+
+a:link {
+  color: blue;
+}
+
+a:visited {
+  color: red;
+}
+
+a:hover {
+  color: gray;
+}
+
+a:active {
+  color: black;
+}
