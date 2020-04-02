@@ -2,8 +2,8 @@
 body {
     background-color: coral;
     font-family: 'Noto Serif', serif;
-    padding: 15px;
-    margin: 5px;
+    padding: 0; 
+
     color: darkslateblue;
     font-size: 20px;
 }
@@ -11,10 +11,11 @@ body {
 body.about {
     background-color: beige;
     font-family: 'Noto Serif', serif;
-    padding: 15px;
-    margin: 5px;
+    padding: 0;
+    margin: 0;
     color: darkgreen;
     font-size: 20px;
+    width: 100%;
 }
 
 body.services {
@@ -23,7 +24,6 @@ body.services {
     padding: 15px;
     margin: 5px;
     color: black;
-    font-size: 20px;
 }
 
 body.contact {
@@ -43,13 +43,13 @@ body.gallery {
     color: lawngreen;
     font-size: 20px;
 }
+/*************************/
 
 /*CSS to control general elements used in every page
 that doesn't require specificity'*/
 h1 {
     font-size: 45px;
     font-family: 'Lato', sans-serif;
-    padding: 15px;
     margin: 5px;
     color: darkslateblue;
 }
@@ -58,8 +58,7 @@ header {
     text-align: center;
     position: static;
     font-family: 'Lato', sans-serif;
-    padding: 10px;
-    margin: 5px;
+    margin: 0px;
     color: darkslateblue;
 }
 
@@ -68,12 +67,13 @@ img {
     border-radius: 50%;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 20%;
     opacity: 0.2;
 }
 
-li {
+.footNav {
     float: left;
+    font-size: 15px;
 }
 
 a {
@@ -84,31 +84,123 @@ a {
 ul {
     display: table;
     list-style-type: none;
-    margin: 0 auto;
     padding: 0;
     position: static;
 }
 
 footer {
-    position: static;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .email {
     padding: 0px;
 }
 
+.galleryContent {
+    text-align: center;
+}
+/*************************/
+
+/* a tag attribue specifications for link behaviors */
 a:link {
-  color: blue;
+    color: blue;
 }
 
 a:visited {
-  color: red;
+    color: red;
 }
 
 a:hover {
-  color: gray;
+    color: gray;
 }
 
 a:active {
-  color: black;
+    color: black;
+}
+/*************************/
+
+/* This is CSS specifically for table attribute*/
+
+.contactTable {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+table {
+    border-collapse: collapse;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    height: 10px;
+    text-align: left;
+}
+
+th, td {
+    padding: 40px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+/*************************/
+
+/*Used to separate into columns*/
+.header, .footer {
+    background-color: grey;   
+}
+
+/*Column adjustments per HTML file */ 
+.column {
+    float: left;
+    padding: 45px;
+}
+
+.index {
+    float: left;
+    padding: 45px;
+    text-align: center;
+}
+/*************************/
+
+/*Clearfix per HTML file */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.clearfixIndex::after {
+    content: "";
+    clear: both;
+    display: table;
+    text-align: center;
+}
+
+/*************************/
+.menu {
+    width: 15%;
+}
+
+.content {
+    width: 70%;
+}
+
+.box {
+  float: left;
+  width: 33%;
+  padding: 35px;
+}
+
+* {
+  box-sizing: border-box;
 }

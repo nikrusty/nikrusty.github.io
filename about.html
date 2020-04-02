@@ -6,7 +6,6 @@ This page will talk about the company/site
 -->
 <!DOCTYPE html>
 <html>
-    
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -17,54 +16,79 @@ This page will talk about the company/site
         <meta name="description" content="Home of the best Sports Cards.">
     </head>
     <body class="about">
-        <section>
-            <!-- First section of the page is the header -->
-            <header>
-                <img src="images/infinity.jpg" alt="Infinity Logo">
-                <h1>Infinity Cards</h1>
-            </header>
-        </section>
-        <section>
-            <!-- This section displays the hyperlinks
-            to the other pages of the website -->
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </section>
-        <section>
-            <!--Main content specific to about page
-                This defines the third section of the page-->
-                <article>
-                    Your one stop shop for everything sports cards!<br>
-                    We carry all types of sports from Basketball, Football, Baseball<br>
-                    and many more!<br>
-                    Stop by today or browse our collection online!<br><br>
-                </article>
-                <article>
-                    Since <strong>1975</strong> we have been servicing the world with our fine selections!<br><br>
-                </article>
-        </section>
-        <section>
-            <!-- The last section is the footer to provide secondary
-            navigation, contact info and copyright -->
-            <footer>
-                <p>
-                    <strong>Contact information</strong>: <br>
-                    <a href="mailto:infinitycards@infinitycards.infinitycards" class="email">
-                        infinitycards@infinitycards.infinitycards</a>
-                    890 Infinity St, Infinity, AK<br>
-                    123-456-7890                    
-                </p>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </footer>
-        </section>
+        <div class="header">
+            <section>
+                <!-- First section of the page is the header -->
+                <header>
+                    <img src="images/infinity.jpg" alt="Infinity Logo">
+                    <h1>Infinity Cards</h1>
+                </header>
+            </section>
+        </div>
+        <div class="clearfix">
+            <div class="column menu">
+                <section>
+                    <!-- This section displays the hyperlinks
+                    to the other pages of the website -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </section>                
+            </div>
+            <div class="column content">
+                <section>
+                    <!--Main content specific to about page
+                        This defines the third section of the page-->
+                    <table>
+                        <tr>
+                            <th>Card Types Available</th>
+                            <th>Price Range</th>
+                            <th>Latest Released</th>
+                        </tr>
+                        <tr>
+                            <td>Basketball</td>
+                            <td>$50-500</td>
+                            <td>01/2020</td>
+                        </tr>
+                        <tr>
+                            <td>Football</td>
+                            <td>$25 - $400</td>
+                            <td>02/2020</td>
+                        </tr>
+                        <tr>
+                            <td>Baseball</td>
+                            <td>$5 - $15</td>
+                            <td>03/2020</td>
+                        </tr>
+                    </table>
+                </section>
+            </div>
+            </div>   
+        <div class="footer">
+            <section>
+                <!-- The last section is the footer to provide secondary
+                navigation, contact info and copyright -->
+                <footer>
+                    <p>
+                        <strong>Contact information</strong>: <br>
+                        <a href="mailto:infinitycards@infinitycards.infinitycards" class="email">
+                            infinitycards@infinitycards.infinitycards</a>
+                        890 Infinity St, Infinity, AK<br>
+                        123-456-7890                    
+                    </p>
+                    <ul>
+                        <li class="footNav"><a href="index.html">Home</a></li>
+                        <li class="footNav"><a href="about.html">About Us</a></li>
+                        <li class="footNav"><a href="services.html">Services</a></li>
+                        <li class="footNav"><a href="gallery.html">Gallery</a></li>
+                        <li class="footNav"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </footer>
+            </section>
+        </div>    
     </body>
 </html>

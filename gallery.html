@@ -17,48 +17,60 @@ This page will display images for the website
         <meta name="description" content="Home of the best Sports Cards.">
     </head>
     <body class="gallery">
-        <section>
-            <!-- First section of the page is the header -->
-            <header>
-                <img src="images/infinity.jpg" alt="Infinity Logo">
-                <h1>Infinity Cards</h1>
-            </header>
-        </section>
-        <section>
-            <!-- This section displays the hyperlinks
-            to the other pages of the website -->
-            <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-            </ul>
-        </section>
-        <section>
-            <!--Main content specific to gallery page
-                This defines the third section of the page-->
-                <article>
-                    Check out these awesome pulls from some of our customers!<br>
-                </article>
-        </section>
-        <section>
-            <!-- The last section is the footer to provide secondary
-            navigation, contact info and copyright -->
-            <footer>
-                <p>
-                    <strong>Contact information</strong>: <br>
-                    <a href="mailto:infinitycards@infinitycards.infinitycards" class="email">
-                        infinitycards@infinitycards.infinitycards</a>
-                    890 Infinity St, Infinity, AK<br>
-                    123-456-7890                    
-                </p>
-                <ul>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
-                </ul>
-            </footer>
-        </section>
+        <div class="header">
+            <section>
+                <!-- First section of the page is the header -->
+                <header>
+                    <img src="images/infinity.jpg" alt="Infinity Logo">
+                    <h1>Infinity Cards</h1>
+                </header>
+            </section>
+        </div>
+        <div class="clearfix">
+            <div class="column menu">
+                <section>
+                    <!-- This section displays the hyperlinks
+                    to the other pages of the website -->
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </section>
+            </div>
+            <div class="column content">
+                <section>
+                    <!--Main content specific to gallery page
+                        This defines the third section of the page-->
+                        <article>
+                            <p class="galleryContent">Check out these awesome pulls from some of our customers!</p>
+                        </article>
+                </section>
+            </div>
+        </div>
+        <div class="footer">
+            <section>
+                <!-- The last section is the footer to provide secondary
+                navigation, contact info and copyright -->
+                <footer>
+                    <p>
+                        <strong>Contact information</strong>: <br>
+                        <a href="mailto:infinitycards@infinitycards.infinitycards" class="email">
+                            infinitycards@infinitycards.infinitycards</a>
+                        890 Infinity St, Infinity, AK<br>
+                        123-456-7890                    
+                    </p>
+                    <ul>
+                        <li class="footNav"><a href="index.html">Home</a></li>
+                        <li class="footNav"><a href="about.html">About Us</a></li>
+                        <li class="footNav"><a href="services.html">Services</a></li>
+                        <li class="footNav"><a href="gallery.html">Gallery</a></li>
+                        <li class="footNav"><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </footer>
+            </section>
+        </div>
     </body>
 </html>
