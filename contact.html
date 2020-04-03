@@ -54,6 +54,29 @@ contact information for the site
                             <td>Address: 890 Infinity St, Infinity, AK</td>
                         </tr>
                     </table>
+                    <form class="infoForm" action=”response_page.php” method=”post” method="get">
+                        <fieldset>
+                            <legend>Request Info!</legend>
+                            <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="firstname" required><br>
+                            <label for="lname">Last name:</label><br>
+                                <input type="text" id="lname" name="lastname" required><br>
+                            <input type="radio" id="male" name="gender" value="male" required>
+                                <label for="male">Male</label><br>
+                            <input type="radio" id="female" name="gender" value="female">
+                                <label for="female">Female</label><br>
+                            <label for="cars">Choose a sport: </label>
+                            <select id="sports" name="sports">
+                                <option value="basketball">Basketball</option>
+                                <option value="football">Football</option>
+                                <option value="baseball">Baseball</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <input type="submit" value="Submit">
+                        </fieldset>
+                    </form>
+                    <textarea class="infoForm" rows="4" cols="50" name="comment" form="usrform" id="interest" name="interest">
+                        What interests you?</textarea>
                 </section>
             </div>
         </div>

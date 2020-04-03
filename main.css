@@ -226,3 +226,24 @@ table, th, td {
     bottom: 0; left: 0;
     margin: auto; /* make em equal */
 }
+
+/*Form CSS */
+form {
+    width: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: left;
+
+}
+.infoForm {
+    display: block;
+    text-align: left;
+}
+textarea {
+    width: 50%;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
